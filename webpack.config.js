@@ -12,7 +12,7 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /.jsx?/, // files with .js or .jsx
+        test: /.(js|jsx)$/, // files with .js or .jsx
         exclude: /node_modules/,
         use:{
           loader: 'babel-loader',
@@ -54,5 +54,8 @@ module.exports = {
     proxy: {
       '/api': 'http://localhost:3000'
     }
-  }
+  },
+  resolve: { // not sure why this isn't working
+    extensions: ['','.js','.jsx'],
+  },
 };
