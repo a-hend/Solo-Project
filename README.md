@@ -9,10 +9,13 @@ Key: lBlh4Uh58OH5CabW4IOa43ts6NaSoMOgPIEuhyQy
 - ~~link a style sheet with a background~~
 - ~~create a react contianer and link to app~~
 - ~~style the container to look like a box~~
-- 
+- ~~how do I add an image tag to a component?~~
+- ~~how do I display an image within a component using a url?~~
+- ~~How do I make an api request from my server?~~
 
 ## What question am I working on now?
-- how do I add an image tag to a component?
+- how do I make a request to the server from a react component (triggering an api request and response)
+
 
 ## What might I work on next?
 - How do I make a successful request to an api?
