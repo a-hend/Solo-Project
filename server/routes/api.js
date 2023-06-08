@@ -1,15 +1,29 @@
 const express = require('express');
-const app = require('../server');
+// const fetch = require('node-fetch');
+
+// const app = require('../server');
+
 // import controllers
+const apiController = require('../controllers/apiController');
+
 
 const router = express.Router();
 
 // get request from server.js at /api endpoint
-router.get('/', 
-  // midware (controller) here
+router.get('/',
+  apiController.getPic,
   (req, res, next) => {
-    res.status(200).send('some data');
+    console.log('from midware: ',res.locals.data);
+    res.status(200).json(res.locals.data);
 });
+
+router.get('/',
+  (req, res, next) => {
+    res.status(200).send('Welcome to the dark side');
+});
+
+
+
 
 
 module.exports = router;

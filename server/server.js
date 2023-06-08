@@ -1,18 +1,19 @@
+
 const path = require('path');
 const express = require('express');
 
 const app = express();
 const PORT = 3000;
 
+// require routers
 const api = require('./routes/api.js');
 
-app.use('/api', 
-  api
-  // (req, res) => {
-  //   res.status(200).send('Hello api endpoint, from the back-end of your mom\'s house');
-);
+// define route handlers
+app.use('/api', api);
 
-
+app.get('/', (req, res, next) => {
+  res.status(200).json('This is the backside');
+});
 
 
 // catch-all route handler for any requests to an unknown route
@@ -34,5 +35,8 @@ app.use((err,req,res, next) => { // Express knows this is the global error handl
 app.listen(PORT, () => {
   console.log(`Server listening on port: ${PORT}`)
 });
+
+
+
 
 module.exports = app;
