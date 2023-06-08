@@ -2,8 +2,10 @@ import React from "react";
 
 export default function Component() {
   return(
-    <div>
-      <h1>This is a component!</h1>
+    <div className="comp">
+      <h1>This is a component!
+        <img src="{}" alt="image" />
+      </h1>
     </div>
   )
 }

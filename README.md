@@ -1,11 +1,24 @@
 # Solo-Project
 
+## NASA API info
+Account Email: abehenderson@gmail.com
+Account ID: 11738ebb-db92-427b-a4f4-57b5b40523db
+Key: lBlh4Uh58OH5CabW4IOa43ts6NaSoMOgPIEuhyQy
+
 ## NEXT:
-- Decide what I want to do
-  - query API for NASA pictures?
-  - research the NASA API (start with the readme and/or googling)
+- ~~link a style sheet with a background~~
+- ~~create a react contianer and link to app~~
+- ~~style the container to look like a box~~
+- 
 
 ## What question am I working on now?
+- how do I add an image tag to a component?
+
+## What might I work on next?
+- How do I make a successful request to an api?
+
+
+
 - ### What does `npm start` do?
   - spins up webpack.config (where it gets index.js at entry)
 
