@@ -13,7 +13,7 @@ const router = express.Router();
 router.get('/',
   apiController.getPic,
   (req, res, next) => {
-    console.log('from midware: ',res.locals.data);
+    console.log('From getPic function: ', res.locals.data);
     res.status(200).json(res.locals.data);
 });
 

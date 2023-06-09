@@ -3,20 +3,28 @@
 
 const apiController = {};
 
+const key = 'lBlh4Uh58OH5CabW4IOa43ts6NaSoMOgPIEuhyQy'
 
-apiController.getPic = async (req, res, next) => {
-  try {
-    const response = await fetch('https://http.dog/200.jpg');
-    const data = await response.blob();
-    const imageURL = URL.createObjectURL(data);
-    console.log('From api: ', imageURL);  
-    // res.locals.data = imageURL;
-    return next();
-  } 
-  catch (error) {
-    console.log('Error fetching image');
-    return next({ log: 'An error occurred retrieving data from NASA'});
-  }
+
+apiController.getPic = (req, res, next) => {
+  
+  fetch(`https://api.nasa.gov/planetary/apod?api_key=${key}`)
+    .then(res => res.json())
+    .then(data => {
+      console.log('Data from API: ', data);
+      res.locals.data = {
+        url: data.url,
+        title: data.title
+      }
+      return next();
+    })
+    .catch(err => {
+      console.log('Error retrieving data from api');
+      return next({
+        log: "Error with api request",
+        message: err,
+      })
+    })
 };
 
 

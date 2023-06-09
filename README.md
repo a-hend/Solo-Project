@@ -4,18 +4,30 @@
 Account Email: abehenderson@gmail.com
 Account ID: 11738ebb-db92-427b-a4f4-57b5b40523db
 Key: lBlh4Uh58OH5CabW4IOa43ts6NaSoMOgPIEuhyQy
+Sample Image: https://apod.nasa.gov/apod/image/2306/ic1396ASI294large_1030.jpg
 
 ## NEXT:
 - ~~link a style sheet with a background~~
 - ~~create a react contianer and link to app~~
 - ~~style the container to look like a box~~
-- 
+- ~~how do I add an image tag to a component?~~
+- ~~how do I display an image within a component using a url?~~
+- ~~How do I make an api request from my server?~~
+- ~~how do I make a request to the server from a react component (triggering an api request and response)~~
 
 ## What question am I working on now?
-- how do I add an image tag to a component?
+- How do I create more than one component from the input field?
+
 
 ## What might I work on next?
-- How do I make a successful request to an api?
+- Container needs:
+- needs an input field and button asking for a birthday
+- needs an input field asking for the number of images requested
+- based on the number of images requested
+  - creates a component for each number of images
+  - creates a year for each image - starting with previous year
+  - sends request to api for each image (re-usable code)
+  - (reminds me of one of our units...something with cards - markets??? or Star Wars???)
 
 
 
