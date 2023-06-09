@@ -1,4 +1,16 @@
 # Solo-Project
+- The problem: How to celebrate my birthday during Codesmith?
+- The solution: ask for a gift from the Universe to get me through the day
+- DEMO
+- Challenges:
+  - webpack - took 1 whole day, clean slate twice
+  - successful request to a public api - took one whole day and 3 apis - finally success!
+  - API that I wanted to pull from was mostly down
+  - Remembering react (state anyone?) and styling components
+- Stretch goals:
+  - actually get pics from api
+  - one click to set your google homepage  
+
 
 ## NASA API info
 Account Email: abehenderson@gmail.com
