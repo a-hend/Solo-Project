@@ -6,7 +6,7 @@ import './stylesheets/style.css';
 export default function App() {
   return(
     <div>
-      <h1>Abe's Solo Project</h1>
+      <h1></h1>
       <Container />
     </div>
   );

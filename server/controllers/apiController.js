@@ -3,10 +3,12 @@
 
 const apiController = {};
 
+const key = 'lBlh4Uh58OH5CabW4IOa43ts6NaSoMOgPIEuhyQy'
+
 
 apiController.getPic = (req, res, next) => {
   
-  fetch('https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY')
+  fetch(`https://api.nasa.gov/planetary/apod?api_key=${key}`)
     .then(res => res.json())
     .then(data => {
       console.log('Data from API: ', data);
@@ -23,7 +25,6 @@ apiController.getPic = (req, res, next) => {
         message: err,
       })
     })
-    
 };
 
 
